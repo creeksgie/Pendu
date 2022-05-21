@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="593.0" prefWidth="580.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControleurJeu">
+   <children>
+      <ImageView fitHeight="594.0" fitWidth="621.0" layoutX="-14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Images/171733-potence-avec-l-illustration-.jpeg" />
+         </image>
+      </ImageView>
+      <Button fx:id="AButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#Aventure" />
+      <Button layoutX="66.0" layoutY="14.0" mnemonicParsing="false" onAction="#Parametre" />
+      <Button layoutX="118.0" layoutY="15.0" mnemonicParsing="false" onAction="#Aide" />
+      <Button fx:id="closeButton" layoutX="168.0" layoutY="14.0" mnemonicParsing="false" onAction="#Quitter" />
+      <Label layoutX="179.0" layoutY="81.0" text="Mot à découvrir " textFill="WHITE">
+         <font>
+            <Font name="Forte" size="29.0" />
+         </font>
+      </Label>
+      <Label layoutX="65.0" layoutY="430.0" text="Nombre d'erreur :" textFill="WHITE">
+         <font>
+            <Font name="Forte" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="357.0" layoutY="430.0" text=" ? sur 10" textFill="WHITE">
+         <font>
+            <Font name="Forte" size="25.0" />
+         </font>
+      </Label>
+      <Button layoutX="34.0" layoutY="474.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="47.0" stylesheets="@jeu.css" text="A" />
+      <Button layoutX="90.0" layoutY="474.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="47.0" stylesheets="@jeu.css" text="B" />
+      <Button layoutX="148.0" layoutY="474.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="47.0" stylesheets="@jeu.css" text="C" />
+      <Button layoutX="204.0" layoutY="474.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="47.0" stylesheets="@jeu.css" text="D" />
+      <Button layoutX="262.0" layoutY="474.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="47.0" stylesheets="@jeu.css" text="E" />
+      <Button layoutX="321.0" layoutY="474.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="47.0" stylesheets="@jeu.css" text="F" />
+      <Button layoutX="374.0" layoutY="474.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="47.0" stylesheets="@jeu.css" text="G" />
+      <Button layoutX="430.0" layoutY="474.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="47.0" stylesheets="@jeu.css" text="H" />
+      <Button layoutX="34.0" layoutY="508.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="47.0" stylesheets="@jeu.css" text="J" />
+      <Button layoutX="90.0" layoutY="508.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="47.0" stylesheets="@jeu.css" text="K" />
+      <Button layoutX="485.0" layoutY="474.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="47.0" stylesheets="@jeu.css" text="I" />
+      <Button layoutX="148.0" layoutY="508.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="47.0" stylesheets="@jeu.css" text="L" />
+      <Button layoutX="200.0" layoutY="508.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="55.0" stylesheets="@jeu.css" text="M" />
+      <Button layoutX="262.0" layoutY="508.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="47.0" stylesheets="@jeu.css" text="N" />
+      <Button layoutX="321.0" layoutY="508.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="47.0" stylesheets="@jeu.css" text="O" />
+      <Button layoutX="374.0" layoutY="508.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="47.0" stylesheets="@jeu.css" text="P" />
+      <Button layoutX="430.0" layoutY="508.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="47.0" stylesheets="@jeu.css" text="Q" />
+      <Button layoutX="485.0" layoutY="508.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="47.0" stylesheets="@jeu.css" text="R" />
+      <Button layoutX="34.0" layoutY="543.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="47.0" stylesheets="@jeu.css" text="S" />
+      <Button layoutX="90.0" layoutY="543.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="47.0" stylesheets="@jeu.css" text="T" />
+      <Button layoutX="148.0" layoutY="543.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="47.0" stylesheets="@jeu.css" text="U" />
+      <Button layoutX="204.0" layoutY="543.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="47.0" stylesheets="@jeu.css" text="V" />
+      <Button layoutX="258.0" layoutY="543.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="55.0" stylesheets="@jeu.css" text="W" />
+      <Button layoutX="321.0" layoutY="543.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="47.0" stylesheets="@jeu.css" text="X" />
+      <Button layoutX="374.0" layoutY="543.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="47.0" stylesheets="@jeu.css" text="Y" />
+      <Button layoutX="430.0" layoutY="543.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="47.0" stylesheets="@jeu.css" text="Z" />
+      <ImageView fitHeight="135.0" fitWidth="65.0" layoutX="367.0" layoutY="238.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Images/Pirate_roux.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
