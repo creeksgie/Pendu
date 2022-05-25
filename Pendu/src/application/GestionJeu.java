@@ -38,7 +38,7 @@ public class GestionJeu {
 	///////////////////////////////////////////////////////////////////////////////////////////////
     public GestionJeu(String nomDico) throws IOException{
     	this.nomJoueur = "";
-    	this.nbMaxErreurs = 4;
+    	this.nbMaxErreurs = 9;
     	this.nbErreurs = 0;
     	this.nbLettresTrouvees = 0;
     	lettresDejaDonnees = new String();
@@ -46,7 +46,6 @@ public class GestionJeu {
     	this.motMystere = new String();
     	this.dico = new ArrayList<String>();
     	ConstruireDico(nomDico);
-    	
     }
     
     
@@ -287,6 +286,27 @@ public class GestionJeu {
 			index = this.motMystere.indexOf(car, index +  1) ;  
 		}
 		return nbpos;
+	}
+	
+	public boolean Verif(char reponse,Vector<Integer> pos)
+	{
+		if (ChercherLettreDansMot(reponse, pos) == 0)
+	    {	
+	         MAJNbErreurs();
+	         if (MaxErreursDepasse())
+	         {
+	         	return true;
+	         }
+	         return false;
+	    }
+	    else
+	    {
+	 	   	if (ToutTrouve()) 
+	         {
+	             return true;
+	         }		
+	 	   	return false;
+	    }
 	}
 
 }

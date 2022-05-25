@@ -1,3 +1,15 @@
+.label-Titre{
+-fx-font-size : 30px;
+-fx-font-family : "Forte";
+-fx-text-fill : #000000;
+}
+
+.label{
+-fx-font-size : 24px;
+-fx-font-family : "Forte";
+-fx-text-fill : #000000;
+}
+
 
 .button {
 -fx-background-color: #AD6B40;

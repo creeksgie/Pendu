@@ -19,7 +19,7 @@
                   <Font name="Forte" size="16.0" />
                </font>
             </Button>
-            <Label fx:id="Titre" layoutX="239.0" layoutY="48.0" prefHeight="46.0" prefWidth="241.0" stylesheets="@application.css" text="Jeu du Pendu" textAlignment="CENTER">
+            <Label fx:id="Titre" layoutX="246.0" layoutY="48.0" prefHeight="46.0" prefWidth="241.0" stylesheets="@application.css" text="Jeu du Pendu" textAlignment="CENTER">
                <font>
                   <Font name="Yu Gothic Medium" size="21.0" />
                </font>
@@ -44,5 +44,25 @@
                   <Font name="Forte" size="16.0" />
                </font>
             </Button>
+      <ImageView fitHeight="103.0" fitWidth="73.0" layoutX="514.0" layoutY="125.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Images/newgame.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="94.0" fitWidth="73.0" layoutX="514.0" layoutY="174.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Images/aideicone.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="99.0" fitWidth="73.0" layoutX="514.0" layoutY="234.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Images/Paramètre.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="78.0" fitWidth="73.0" layoutX="514.0" layoutY="294.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Images/quitter.png" />
+         </image>
+      </ImageView>
          </children>
       </AnchorPane>
