@@ -180,7 +180,6 @@ public class ControleurJeu {
 		
 		if(!getGagner())//si le boolean Gagner est à faux on perd
 		{
-
 			FXMLLoader load = new FXMLLoader(getClass().getResource("Fin.fxml"));
 		    FXMLLoader load1 = new FXMLLoader(getClass().getResource("BarreD'option.fxml"));
 			root = load.load();
@@ -190,14 +189,13 @@ public class ControleurJeu {
 			ControleurFin fin = load.getController();
 			Stage stage = (Stage) A.getScene().getWindow();
 			Scene scene = new Scene(grille);
-			scene.getStylesheets().add(getClass().getResource(opt.getPolice(opt.getPolice("Aide"))).toExternalForm());
+			scene.getStylesheets().add(getClass().getResource(opt.getPolice("Aide")).toExternalForm());
 			fin.ControleurF(stage,jeu,opt);
 			controlleurOpt.ControleurOpt(stage,jeu,opt,"Aide");
 			stage.setScene(scene);
 		}
 		else if(finJeu)//sinon si le jeu est fini on gagne
 		{
-		    
 			FXMLLoader load = new FXMLLoader(getClass().getResource("Fin.fxml"));
 		    FXMLLoader load1 = new FXMLLoader(getClass().getResource("BarreD'option.fxml"));
 			root = load.load();
@@ -207,7 +205,7 @@ public class ControleurJeu {
 			ControleurFin fin = load.getController();
 			Stage stage = (Stage) A.getScene().getWindow();
 			Scene scene = new Scene(grille);
-			scene.getStylesheets().add(getClass().getResource(opt.getPolice(opt.getPolice("Aide"))).toExternalForm());
+			scene.getStylesheets().add(getClass().getResource(opt.getPolice("Aide")).toExternalForm());
 			fin.ControleurF(stage,jeu,opt);
 			controlleurOpt.ControleurOpt(stage,jeu,opt,"Aide");
 			stage.setScene(scene);

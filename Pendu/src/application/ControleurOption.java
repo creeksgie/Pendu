@@ -160,7 +160,7 @@ public class ControleurOption {
 		A.setStyle("-fx-font-size : 24px;");A.setLayoutY(240);A.setLayoutX(290);
 		S.setBlockIncrement(5);S.setLayoutY(250);S.setLayoutX(150);
 		S.setMajorTickUnit(5);S.setMax(25);S.setMin(10);
-		S.setMinorTickCount(0);S.setShowTickLabels(true);S.setSnapToTicks(true);
+		S.setMinorTickCount(0);S.setShowTickLabels(false);S.setSnapToTicks(true);
 		S.setValue(opt.getValue());
 		AnchorPane grille = new AnchorPane(imageView,imageView1,T,C,S,L,Brun,Roux,a,A);
 		grille.setMinHeight(400);

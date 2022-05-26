@@ -41,7 +41,7 @@ public class ControleurFin {
 		savePendu = opt.actualPendu;
 		scenefin = stagefin.getScene();
 		scenefin.getStylesheets().clear();
-		scenefin.getStylesheets().add(getClass().getResource(opt.getPolice(opt.getPolice("Aide"))).toExternalForm());
+		scenefin.getStylesheets().add(getClass().getResource(opt.getPolice("Aide")).toExternalForm());
 		if(jeu.MaxErreursDepasse())
 		{
 			Image image = new Image("file:Images/loose.png");
