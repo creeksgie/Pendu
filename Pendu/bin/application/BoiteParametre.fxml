@@ -16,7 +16,7 @@
             <Image url="@../../Images/Parametre.jpeg" />
          </image>
       </ImageView>
-      <Button layoutX="561.0" layoutY="143.0" mnemonicParsing="false" stylesheets="@application.css">
+      <Button layoutX="561.0" layoutY="143.0" mnemonicParsing="false">
          <graphic>
             <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -25,7 +25,7 @@
             </ImageView>
          </graphic>
       </Button>
-      <Button layoutX="439.0" layoutY="143.0" mnemonicParsing="false" stylesheets="@application.css">
+      <Button layoutX="439.0" layoutY="143.0" mnemonicParsing="false">
          <graphic>
             <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -42,7 +42,7 @@
             <Image url="@../../Images/1.png" />
          </image>
       </ImageView>
-      <Label fx:id="Titre" layoutX="114.0" layoutY="17.0" stylesheets="@application.css" text="Option">
+      <Label fx:id="Titre" layoutX="114.0" layoutY="17.0" text="Option">
          <font>
             <Font name="Forte" size="30.0" />
          </font>

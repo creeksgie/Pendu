@@ -1,0 +1,15 @@
+
+.label{
+-fx-font-size : 15px;
+-fx-font-family : "Forte";
+-fx-text-fill : #000000;
+}
+
+
+.button {
+-fx-background-color: #AD6B40;
+-fx-font-weight: 600;
+-fx-font-size: 15px;
+-fx-padding: 0 18px;
+-fx-font-family : "Forte";
+}

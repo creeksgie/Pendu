@@ -13,7 +13,7 @@
             <Image url="@../../Images/Aide.jpeg" />
          </image>
       </ImageView>
-      <Label fx:id="Titre" layoutX="307.0" layoutY="52.0" stylesheets="@application.css" text="Aide" />
+      <Label fx:id="Titre" layoutX="294.0" layoutY="51.0" style="-fx-font-family: Forte; -fx-font-size: 30pt; -fx-text-fill: #000000;" text="Aide" />
       <Label alignment="CENTER" layoutX="31.0" layoutY="129.0" prefHeight="25.0" prefWidth="221.0" text="Support">
          <font>
             <Font name="Forte" size="21.0" />

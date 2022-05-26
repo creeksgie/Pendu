@@ -21,7 +21,9 @@ public class Main extends Application {
 	@Override
 	public void init() throws IOException
 	{
-		jeu = new GestionJeu("Dictionnaires/DicoFacile.txt");
+		opt = new GestionOption();
+		jeu = new GestionJeu(opt.getDico(0));
+		
 		jeu.InitialiserPartie();
 	}
 	
@@ -31,13 +33,12 @@ public class Main extends Application {
 			FXMLLoader load = new FXMLLoader(getClass().getResource("Accueil.fxml"));
 			root = load.load();
 			ControleurAccueil acc = load.getController();
-			acc.ControleurAccueil(jeu);
-			System.out.println(jeu.getDico());
 			Scene scene = new Scene(root);
-			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+			scene.getStylesheets().add(getClass().getResource(opt.getPolice("Accueil")).toExternalForm());
 			primaryStage.setScene(scene);
 			primaryStage.setTitle("Jeu du pendu");
 			primaryStage.getIcons().add(new Image("/tête.png"));
+			acc.ControleurAccueil(primaryStage,jeu,opt);
 			primaryStage.show();
 		} catch(Exception e) {
 			e.printStackTrace();

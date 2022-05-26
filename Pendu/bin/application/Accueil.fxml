@@ -14,14 +14,14 @@
                   <Image url="@../../Images/scene-galleon-in-bay-of-island-fore.jpeg" />
                </image>
             </ImageView>
-            <Button fx:id="AButton" layoutX="151.0" layoutY="146.0" mnemonicParsing="false" onAction="#Aventure" prefHeight="27.0" prefWidth="417.0" stylesheets="@application.css" text="Aventure Solo" textFill="#0d0d0d">
+            <Button fx:id="AButton" layoutX="151.0" layoutY="146.0" mnemonicParsing="false" onAction="#Aventure" prefHeight="27.0" prefWidth="417.0" text="Aventure Solo" textFill="#0d0d0d">
                <font>
                   <Font name="Forte" size="16.0" />
                </font>
             </Button>
-            <Label fx:id="Titre" layoutX="246.0" layoutY="48.0" prefHeight="46.0" prefWidth="241.0" stylesheets="@application.css" text="Jeu du Pendu" textAlignment="CENTER">
+            <Label fx:id="Titre" layoutX="246.0" layoutY="48.0" prefHeight="46.0" prefWidth="241.0" style="-fx-font-size: 30pt; -fx-font-family: Forte; -fx-text-fill: #000000;" text="Jeu du Pendu" textAlignment="CENTER">
                <font>
-                  <Font name="Yu Gothic Medium" size="21.0" />
+                  <Font name="Forte" size="40.0" />
                </font>
             </Label>
             <Label layoutX="172.0" layoutY="81.0">
@@ -29,17 +29,17 @@
                   <Font size="16.0" />
                </font>
             </Label>
-            <Button layoutX="151.0" layoutY="260.0" mnemonicParsing="false" onAction="#Parametre" prefHeight="27.0" prefWidth="417.0" stylesheets="@application.css" text="Paramètre" textFill="#0d0d0d">
+            <Button layoutX="151.0" layoutY="260.0" mnemonicParsing="false" onAction="#Parametre" prefHeight="27.0" prefWidth="417.0" text="Paramètre" textFill="#0d0d0d">
                <font>
                   <Font name="Forte" size="16.0" />
                </font>
             </Button>
-            <Button fx:id="closeButton" layoutX="151.0" layoutY="314.0" mnemonicParsing="false" onAction="#Quitter" prefHeight="27.0" prefWidth="417.0" stylesheets="@application.css" text="Quitter" textFill="#0d0d0d">
+            <Button fx:id="closeButton" layoutX="151.0" layoutY="314.0" mnemonicParsing="false" onAction="#Quitter" prefHeight="27.0" prefWidth="417.0" text="Quitter" textFill="#0d0d0d">
                <font>
                   <Font name="Forte" size="16.0" />
                </font>
             </Button>
-            <Button layoutX="151.0" layoutY="200.0" mnemonicParsing="false" onAction="#Aide" prefHeight="27.0" prefWidth="417.0" stylesheets="@application.css" text="Aide" textFill="#0d0d0d">
+            <Button layoutX="151.0" layoutY="200.0" mnemonicParsing="false" onAction="#Aide" prefHeight="27.0" prefWidth="417.0" text="Aide" textFill="#0d0d0d">
                <font>
                   <Font name="Forte" size="16.0" />
                </font>

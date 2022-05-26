@@ -1,0 +1,18 @@
+
+.label{
+-fx-font-size : 30pt;
+-fx-font-family : "Forte";
+-fx-text-fill : #000000;
+}
+
+
+.button {
+-fx-opacity:0.8;
+-fx-background-color: #AD6B40;
+-fx-font-weight: 600;
+-fx-font-size: 15px;
+-fx-padding: 0 18px;
+-fx-text-fill : #000000;
+-fx-font-family : "Forte";
+}
+

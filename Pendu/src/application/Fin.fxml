@@ -33,7 +33,7 @@
       </ImageView>
       <Button layoutX="140.0" layoutY="3.0" mnemonicParsing="false" onAction="#Aide" opacity="0.0" prefHeight="69.0" prefWidth="47.0" />
       <Button fx:id="closeButton" layoutX="195.0" layoutY="9.0" mnemonicParsing="false" onAction="#Quitter" opacity="0.0" prefHeight="55.0" prefWidth="65.0" />
-      <Label fx:id="E" layoutX="51.0" layoutY="173.0" prefHeight="27.0" prefWidth="336.0" stylesheets="@Aide.css" text="Label" />
-      <Label fx:id="M" alignment="CENTER" layoutX="156.0" layoutY="217.0" prefHeight="27.0" prefWidth="195.0" stylesheets="@Aide.css" text="Label" />
+      <Label fx:id="E" layoutX="26.0" layoutY="173.0" prefHeight="27.0" prefWidth="553.0" text="Label" />
+      <Label fx:id="M" alignment="CENTER" layoutX="156.0" layoutY="217.0" prefHeight="27.0" prefWidth="195.0" text="Label" />
    </children>
 </AnchorPane>

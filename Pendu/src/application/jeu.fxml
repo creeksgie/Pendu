@@ -20,7 +20,7 @@
          </image>
       </ImageView>
       <Button fx:id="AButton" layoutX="3.0" layoutY="1.0" mnemonicParsing="false" onAction="#Aventure" opacity="0.0" prefHeight="69.0" prefWidth="65.0" textFill="TRANSPARENT" />
-      <Label layoutX="179.0" layoutY="81.0" text="Mot à découvrir " textFill="WHITE">
+      <Label alignment="CENTER" layoutX="-3.0" layoutY="81.0" prefHeight="32.0" prefWidth="580.0" text="Mot à découvrir " textFill="WHITE">
          <font>
             <Font name="Forte" size="29.0" />
          </font>
@@ -35,32 +35,32 @@
             <Font name="Forte" size="25.0" />
          </font>
       </Label>
-      <Button fx:id="A" layoutX="34.0" layoutY="474.0" mnemonicParsing="false" onAction="#Lettre" prefHeight="27.0" prefWidth="47.0" stylesheets="@jeu.css" text="A" />
-      <Button fx:id="B" layoutX="90.0" layoutY="474.0" mnemonicParsing="false" onAction="#Lettre" prefHeight="27.0" prefWidth="47.0" stylesheets="@jeu.css" text="B" />
-      <Button fx:id="C" layoutX="148.0" layoutY="474.0" mnemonicParsing="false" onAction="#Lettre" prefHeight="27.0" prefWidth="47.0" stylesheets="@jeu.css" text="C" />
-      <Button fx:id="D" layoutX="204.0" layoutY="474.0" mnemonicParsing="false" onAction="#Lettre" prefHeight="27.0" prefWidth="47.0" stylesheets="@jeu.css" text="D" />
-      <Button fx:id="E" layoutX="262.0" layoutY="474.0" mnemonicParsing="false" onAction="#Lettre" prefHeight="27.0" prefWidth="47.0" stylesheets="@jeu.css" text="E" />
-      <Button fx:id="F" layoutX="321.0" layoutY="474.0" mnemonicParsing="false" onAction="#Lettre" prefHeight="27.0" prefWidth="47.0" stylesheets="@jeu.css" text="F" />
-      <Button fx:id="G" layoutX="374.0" layoutY="474.0" mnemonicParsing="false" onAction="#Lettre" prefHeight="27.0" prefWidth="47.0" stylesheets="@jeu.css" text="G" />
-      <Button fx:id="H" layoutX="430.0" layoutY="474.0" mnemonicParsing="false" onAction="#Lettre" prefHeight="27.0" prefWidth="47.0" stylesheets="@jeu.css" text="H" />
-      <Button fx:id="J" layoutX="34.0" layoutY="508.0" mnemonicParsing="false" onAction="#Lettre" prefHeight="27.0" prefWidth="47.0" stylesheets="@jeu.css" text="J" />
-      <Button fx:id="K" layoutX="90.0" layoutY="508.0" mnemonicParsing="false" onAction="#Lettre" prefHeight="27.0" prefWidth="47.0" stylesheets="@jeu.css" text="K" />
-      <Button fx:id="I" layoutX="485.0" layoutY="474.0" mnemonicParsing="false" onAction="#Lettre" prefHeight="27.0" prefWidth="47.0" stylesheets="@jeu.css" text="I" />
-      <Button fx:id="L" layoutX="148.0" layoutY="508.0" mnemonicParsing="false" onAction="#Lettre" prefHeight="27.0" prefWidth="47.0" stylesheets="@jeu.css" text="L" />
-      <Button fx:id="M" layoutX="200.0" layoutY="508.0" mnemonicParsing="false" onAction="#Lettre" prefHeight="27.0" prefWidth="55.0" stylesheets="@jeu.css" text="M" />
-      <Button fx:id="N" layoutX="262.0" layoutY="508.0" mnemonicParsing="false" onAction="#Lettre" prefHeight="27.0" prefWidth="47.0" stylesheets="@jeu.css" text="N" />
-      <Button fx:id="O" layoutX="321.0" layoutY="508.0" mnemonicParsing="false" onAction="#Lettre" prefHeight="27.0" prefWidth="47.0" stylesheets="@jeu.css" text="O" />
-      <Button fx:id="P" layoutX="374.0" layoutY="508.0" mnemonicParsing="false" onAction="#Lettre" prefHeight="27.0" prefWidth="47.0" stylesheets="@jeu.css" text="P" />
-      <Button fx:id="Q" layoutX="430.0" layoutY="508.0" mnemonicParsing="false" onAction="#Lettre" prefHeight="27.0" prefWidth="47.0" stylesheets="@jeu.css" text="Q" />
-      <Button fx:id="R" layoutX="485.0" layoutY="508.0" mnemonicParsing="false" onAction="#Lettre" prefHeight="27.0" prefWidth="47.0" stylesheets="@jeu.css" text="R" />
-      <Button fx:id="S" layoutX="34.0" layoutY="543.0" mnemonicParsing="false" onAction="#Lettre" prefHeight="27.0" prefWidth="47.0" stylesheets="@jeu.css" text="S" />
-      <Button fx:id="T" layoutX="90.0" layoutY="543.0" mnemonicParsing="false" onAction="#Lettre" prefHeight="27.0" prefWidth="47.0" stylesheets="@jeu.css" text="T" />
-      <Button fx:id="U" layoutX="148.0" layoutY="543.0" mnemonicParsing="false" onAction="#Lettre" prefHeight="27.0" prefWidth="47.0" stylesheets="@jeu.css" text="U" />
-      <Button fx:id="V" layoutX="204.0" layoutY="543.0" mnemonicParsing="false" onAction="#Lettre" prefHeight="27.0" prefWidth="47.0" stylesheets="@jeu.css" text="V" />
-      <Button fx:id="W" layoutX="258.0" layoutY="543.0" mnemonicParsing="false" onAction="#Lettre" prefHeight="27.0" prefWidth="55.0" stylesheets="@jeu.css" text="W" />
-      <Button fx:id="X" layoutX="321.0" layoutY="543.0" mnemonicParsing="false" onAction="#Lettre" prefHeight="27.0" prefWidth="47.0" stylesheets="@jeu.css" text="X" />
-      <Button fx:id="Y" layoutX="374.0" layoutY="543.0" mnemonicParsing="false" onAction="#Lettre" prefHeight="27.0" prefWidth="47.0" stylesheets="@jeu.css" text="Y" />
-      <Button fx:id="Z" layoutX="430.0" layoutY="543.0" mnemonicParsing="false" onAction="#Lettre" prefHeight="27.0" prefWidth="47.0" stylesheets="@jeu.css" text="Z" />
+      <Button fx:id="A" layoutX="34.0" layoutY="474.0" mnemonicParsing="false" onAction="#Lettre" prefHeight="27.0" prefWidth="47.0" text="A" />
+      <Button fx:id="B" layoutX="90.0" layoutY="474.0" mnemonicParsing="false" onAction="#Lettre" prefHeight="27.0" prefWidth="47.0" text="B" />
+      <Button fx:id="C" layoutX="148.0" layoutY="474.0" mnemonicParsing="false" onAction="#Lettre" prefHeight="27.0" prefWidth="47.0" text="C" />
+      <Button fx:id="D" layoutX="204.0" layoutY="474.0" mnemonicParsing="false" onAction="#Lettre" prefHeight="27.0" prefWidth="47.0" text="D" />
+      <Button fx:id="E" layoutX="262.0" layoutY="474.0" mnemonicParsing="false" onAction="#Lettre" prefHeight="27.0" prefWidth="47.0" text="E" />
+      <Button fx:id="F" layoutX="321.0" layoutY="474.0" mnemonicParsing="false" onAction="#Lettre" prefHeight="27.0" prefWidth="47.0" text="F" />
+      <Button fx:id="G" layoutX="374.0" layoutY="474.0" mnemonicParsing="false" onAction="#Lettre" prefHeight="27.0" prefWidth="47.0" text="G" />
+      <Button fx:id="H" layoutX="430.0" layoutY="474.0" mnemonicParsing="false" onAction="#Lettre" prefHeight="27.0" prefWidth="47.0" text="H" />
+      <Button fx:id="J" layoutX="34.0" layoutY="508.0" mnemonicParsing="false" onAction="#Lettre" prefHeight="27.0" prefWidth="47.0" text="J" />
+      <Button fx:id="K" layoutX="90.0" layoutY="508.0" mnemonicParsing="false" onAction="#Lettre" prefHeight="27.0" prefWidth="47.0" text="K" />
+      <Button fx:id="I" layoutX="485.0" layoutY="474.0" mnemonicParsing="false" onAction="#Lettre" prefHeight="27.0" prefWidth="47.0" text="I" />
+      <Button fx:id="L" layoutX="148.0" layoutY="508.0" mnemonicParsing="false" onAction="#Lettre" prefHeight="27.0" prefWidth="47.0" text="L" />
+      <Button fx:id="M" layoutX="200.0" layoutY="508.0" mnemonicParsing="false" onAction="#Lettre" prefHeight="27.0" prefWidth="55.0" text="M" />
+      <Button fx:id="N" layoutX="262.0" layoutY="508.0" mnemonicParsing="false" onAction="#Lettre" prefHeight="27.0" prefWidth="47.0" text="N" />
+      <Button fx:id="O" layoutX="321.0" layoutY="508.0" mnemonicParsing="false" onAction="#Lettre" prefHeight="27.0" prefWidth="47.0" text="O" />
+      <Button fx:id="P" layoutX="374.0" layoutY="508.0" mnemonicParsing="false" onAction="#Lettre" prefHeight="27.0" prefWidth="47.0" text="P" />
+      <Button fx:id="Q" layoutX="430.0" layoutY="508.0" mnemonicParsing="false" onAction="#Lettre" prefHeight="27.0" prefWidth="47.0" text="Q" />
+      <Button fx:id="R" layoutX="485.0" layoutY="508.0" mnemonicParsing="false" onAction="#Lettre" prefHeight="27.0" prefWidth="47.0" text="R" />
+      <Button fx:id="S" layoutX="34.0" layoutY="543.0" mnemonicParsing="false" onAction="#Lettre" prefHeight="27.0" prefWidth="47.0" text="S" />
+      <Button fx:id="T" layoutX="90.0" layoutY="543.0" mnemonicParsing="false" onAction="#Lettre" prefHeight="27.0" prefWidth="47.0" text="T" />
+      <Button fx:id="U" layoutX="148.0" layoutY="543.0" mnemonicParsing="false" onAction="#Lettre" prefHeight="27.0" prefWidth="47.0" text="U" />
+      <Button fx:id="V" layoutX="204.0" layoutY="543.0" mnemonicParsing="false" onAction="#Lettre" prefHeight="27.0" prefWidth="47.0" text="V" />
+      <Button fx:id="W" layoutX="258.0" layoutY="543.0" mnemonicParsing="false" onAction="#Lettre" prefHeight="27.0" prefWidth="55.0" text="W" />
+      <Button fx:id="X" layoutX="321.0" layoutY="543.0" mnemonicParsing="false" onAction="#Lettre" prefHeight="27.0" prefWidth="47.0" text="X" />
+      <Button fx:id="Y" layoutX="374.0" layoutY="543.0" mnemonicParsing="false" onAction="#Lettre" prefHeight="27.0" prefWidth="47.0" text="Y" />
+      <Button fx:id="Z" layoutX="430.0" layoutY="543.0" mnemonicParsing="false" onAction="#Lettre" prefHeight="27.0" prefWidth="47.0" text="Z" />
       <ImageView fx:id="Pendu" fitHeight="135.0" fitWidth="65.0" layoutX="367.0" layoutY="238.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../Images/Pirate_roux.png" />
