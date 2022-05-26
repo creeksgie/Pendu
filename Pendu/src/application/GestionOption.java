@@ -71,10 +71,10 @@ public class GestionOption {
 	}
 
 	public void setPolice(int i) {
-		String[] ppara = {"Parametre.css","Parametre2.css","Parametre3.css","Parametre4.css"};
-		String[] pacc = {"Accueil.css","Accueil2.css","Accueil3.css","Accueil4.css"};
-		String[] pjeu = {"jeu.css","jeu2.css","jeu3.css","jeu4.css"};
-		String[] paide = {"Aide.css","Aide2.css","Aide3.css","Aide4.css"};
+		String[] ppara = {"/Parametre.css","/Parametre2.css","/Parametre3.css","/Parametre4.css"};
+		String[] pacc = {"/Accueil.css","/Accueil2.css","/Accueil3.css","/Accueil4.css"};
+		String[] pjeu = {"/jeu.css","/jeu2.css","/jeu3.css","/jeu4.css"};
+		String[] paide = {"/Aide.css","/Aide2.css","/Aide3.css","/Aide4.css"};
 		this.PoliceAccueil = pacc[i];
 		this.PoliceParametre = ppara[i];
 		this.PoliceAide = paide[i];

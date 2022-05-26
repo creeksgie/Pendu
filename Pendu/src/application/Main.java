@@ -16,7 +16,7 @@ public class Main extends Application {
 	
 	private GestionJeu jeu;
 	private GestionOption opt;
-	private Parent root;
+	private Parent root,root2;
 
 	@Override
 	public void init() throws IOException
@@ -31,14 +31,19 @@ public class Main extends Application {
 	public void start(Stage primaryStage) {
 		try {
 			FXMLLoader load = new FXMLLoader(getClass().getResource("Accueil.fxml"));
+			FXMLLoader load1 = new FXMLLoader(getClass().getResource("AccueilBouton.fxml"));
 			root = load.load();
+			root2 = load1.load();
+			AnchorPane grille = new AnchorPane(root,root2);
 			ControleurAccueil acc = load.getController();
-			Scene scene = new Scene(root);
+			ControleurOption Opt = load1.getController();
+			Scene scene = new Scene(grille);
 			scene.getStylesheets().add(getClass().getResource(opt.getPolice("Accueil")).toExternalForm());
 			primaryStage.setScene(scene);
 			primaryStage.setTitle("Jeu du pendu");
 			primaryStage.getIcons().add(new Image("/tête.png"));
-			acc.ControleurAccueil(primaryStage,jeu,opt);
+			acc.ControleurAcc(primaryStage,jeu,opt);
+			Opt.ControleurOpt(primaryStage,jeu,opt,"Accueil");
 			primaryStage.show();
 		} catch(Exception e) {
 			e.printStackTrace();

@@ -1,5 +1,5 @@
 .label{
--fx-font-size : 20px;
+-fx-font-size : 24px;
 -fx-font-family : "Forte";
 -fx-text-fill : #000000;
 }
@@ -7,7 +7,7 @@
 .button {
 -fx-background-color: #AD6B40;
 -fx-font-weight: 600;
--fx-font-size: 20px;
+-fx-font-size: 24px;
 -fx-padding: 0 18px;
 -fx-font-family : "Forte";
 -fx-text-fill : #000000;
@@ -17,5 +17,9 @@
 -fx-background-color: #AD6B40;
 -fx-font-family : "Forte";
 -fx-text-fill : #000000;
--fx-font-size : 20px;
+-fx-font-size : 24px;
+}
+
+.slider{
+-fx-background: #AD6B40;
 }
