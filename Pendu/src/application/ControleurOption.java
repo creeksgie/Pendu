@@ -28,8 +28,7 @@ import javafx.util.Callback;
 
 
 public class ControleurOption {
-	@FXML
-	private Label Titre;
+	
 	@FXML
 	private Button closeButton;
 	@FXML
@@ -40,8 +39,11 @@ public class ControleurOption {
 	private GestionOption opt;
 	private Stage stageopt;
 	private Scene sceneopt;
+	//variable temporaire qui permet de stocker l'état du pendu
 	public int savePendu ;
+	//variable temporaire qui permet de verifier que le bouton valider à bien été utiliser dans la boite de dialog parametre
 	public int validerParametre;
+	//variable temporaire qui permet d'initialiser le css de la bonne scène
 	public String sc;
 	
 	public void ControleurOpt(Stage s,GestionJeu Jeu,GestionOption Opt,String sc) throws IOException {
@@ -55,6 +57,11 @@ public class ControleurOption {
     	sceneopt.getStylesheets().add(getClass().getResource(opt.getPolice(sc)).toExternalForm());
 	}
 	
+	/**
+	 * Lance ou relance la partie 
+	 * @param event : Action d'appuyer sur le bouton Aventure
+	 * @throws IOException
+	 */
 	@FXML
 	public void Aventure(ActionEvent event) throws IOException {
 		FXMLLoader load = new FXMLLoader(getClass().getResource("jeu.fxml"));
@@ -76,7 +83,11 @@ public class ControleurOption {
 		scene.getStylesheets().add(getClass().getResource(opt.getPolice("Jeu")).toExternalForm());
 		stage.setScene(scene);
 	}
-	
+	/**
+	 * renvoie à la page d'accueil
+	 * @param event : Action d'appuyer sur le bouton Quitter
+	 * @throws IOException
+	 */
 	@FXML
 	public void Quitter(ActionEvent event) throws IOException {
 		FXMLLoader load = new FXMLLoader(getClass().getResource("Accueil.fxml"));
@@ -95,6 +106,11 @@ public class ControleurOption {
 		stage.setScene(scene);
 	}
 	
+	/**
+	 * ouvre une boite de dialog qui permet de modifier quelque option comme la Taille de la police,la difficulter ou le skindu pirate
+	 * @param event : Action d'appuyer sur le bouton Parametre
+	 * @throws IOException
+	 */
 	@FXML
 	public void Parametre(ActionEvent event) throws IOException 
 	{
@@ -232,7 +248,12 @@ public class ControleurOption {
 		}
     	ControleurOpt(stageopt,jeu,opt,sc);
 	}
-		
+	
+	/**
+	 * ouvre une boite de dialog qui permet d'acceder au rêgle du jeu et au information de contact
+	 * @param event : Action d'appuyer sur le bouton Aide
+	 * @throws IOException
+	 */
 	@FXML
 	public void Aide(ActionEvent event) throws IOException 
 	{
@@ -250,6 +271,10 @@ public class ControleurOption {
 		dialog.showAndWait();
 	}
 	
+	/**
+	 * Ferme l'application
+	 * @param event : Action d'appuyer sur le bouton Fermer uniquement present sur la scène d'accueil
+	 */
 	@FXML
 	public void Fermer(ActionEvent event) {
 	    Stage stage = (Stage) closeButton.getScene().getWindow();

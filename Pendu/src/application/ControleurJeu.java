@@ -19,10 +19,6 @@ import javafx.stage.Stage;
 public class ControleurJeu {
 	
 	@FXML
-	private Button closeButton;
-	@FXML
-	private Button AButton;
-	@FXML
 	private Button A;
 	@FXML
 	private Button B;
@@ -75,10 +71,13 @@ public class ControleurJeu {
 	@FXML
 	private Button Z;
 	
+	//zone de texte qui affiche le mot au fur et à mesure que la partie avance 
 	@FXML
 	private Label motMystere;
+	//zone de texte qui affiche le nombre d'erreur du joueur 
 	@FXML
 	public Label Erreur;
+	//Image qui montre l'avencement du pendu en temps réel
 	@FXML
 	private ImageView Pendu;
 	
@@ -89,15 +88,12 @@ public class ControleurJeu {
 	
 	private Image pendu;
 	private boolean Gagner = true;
-	public int savePendu ;
-	public int validerParametre;
 	
 	
 	public void ControleurJ(Stage s,GestionJeu Jeu,GestionOption Opt)
 	{
 		jeu = Jeu;
 		opt = Opt;
-		savePendu = opt.actualPendu;
 		jeu.InitialiserPartie();
 		CreerLabel(motMystere);
 		int n = jeu.getNbMaxErreurs() +1;
@@ -131,6 +127,9 @@ public class ControleurJeu {
 		Z.setDisable(false);
 	}
 	
+	/**
+	 * @param i : nombre d'erreur commise par le joueur 
+	 */	
 	public void CreerPendu(int i)
 	{
 		if(i>0 && i<10)
@@ -143,6 +142,12 @@ public class ControleurJeu {
 			Pendu.setOpacity(0);
 	}
 	
+	/**
+	 * permet de gerer l'avencement de la partie jusqu'à la scène de fin avec les potentiels erreur du joueur
+	 * et la découverte du mot mystere
+	 * @param event : Action d'appuyer sur un bouton de type Lettre
+	 * @throws IOException
+	 */
 	@FXML
 	public void Lettre(ActionEvent event) throws IOException{
 		Vector<Integer> pos;
@@ -178,7 +183,7 @@ public class ControleurJeu {
 			}
 		}
 		
-		if(!getGagner())//si le boolean Gagner est � faux on perd
+		if(!getGagner())//si le boolean Gagner est   faux on perd
 		{
 			FXMLLoader load = new FXMLLoader(getClass().getResource("Fin.fxml"));
 		    FXMLLoader load1 = new FXMLLoader(getClass().getResource("BarreD'option.fxml"));
@@ -212,6 +217,9 @@ public class ControleurJeu {
 		}
 	}
 	
+	/**
+	 * @param Mot : la zone de texte qui va afficher le mot construit
+	 */
 	private void CreerLabel(Label Mot)
 	{
 		int i = 0;

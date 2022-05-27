@@ -55,11 +55,7 @@
       <Button fx:id="X" layoutX="321.0" layoutY="543.0" mnemonicParsing="false" onAction="#Lettre" prefHeight="27.0" prefWidth="47.0" text="X" />
       <Button fx:id="Y" layoutX="374.0" layoutY="543.0" mnemonicParsing="false" onAction="#Lettre" prefHeight="27.0" prefWidth="47.0" text="Y" />
       <Button fx:id="Z" layoutX="430.0" layoutY="543.0" mnemonicParsing="false" onAction="#Lettre" prefHeight="27.0" prefWidth="47.0" text="Z" />
-      <ImageView fx:id="Pendu" fitHeight="135.0" fitWidth="65.0" layoutX="367.0" layoutY="238.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../Images/Pirate_roux.png" />
-         </image>
-      </ImageView>
+      <ImageView fx:id="Pendu" fitHeight="135.0" fitWidth="65.0" layoutX="367.0" layoutY="238.0" pickOnBounds="true" preserveRatio="true" />
       <Label fx:id="motMystere" alignment="CENTER" contentDisplay="CENTER" layoutX="111.0" layoutY="136.0" prefHeight="29.0" prefWidth="341.0" textFill="WHITE">
          <font>
             <Font name="Forte" size="25.0" />

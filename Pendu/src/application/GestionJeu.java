@@ -288,9 +288,14 @@ public class GestionJeu {
 		return nbpos;
 	}
 	
-	public boolean Verif(char reponse,Vector<Integer> pos)
+	/**
+	 * @param car : lettre à chercher dans le mot
+	 * @param pos : ensemble des positions où se trouve la lettre 
+	 * @return renvoie un boolean qui est égale à true quand la partie est fini sinob false
+	 */
+	public boolean Verif(char car,Vector<Integer> pos)
 	{
-		if (ChercherLettreDansMot(reponse, pos) == 0)
+		if (ChercherLettreDansMot(car, pos) == 0)
 	    {	
 	         MAJNbErreurs();
 	         if (MaxErreursDepasse())

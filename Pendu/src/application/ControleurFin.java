@@ -11,26 +11,22 @@ import javafx.stage.Stage;
 
 public class ControleurFin {
 	
+	//Image qui affiche la victoire ou la defaite
 	@FXML
 	public ImageView Fin;
 	
+	//zone de texte qui affiche un text en fonction de la situtation du joueur
 	@FXML
 	public Label E;
+	//zone de texte qui affiche le mot mystere
 	@FXML
 	public Label M;
-
-	@FXML
-	private Button closeButton;
-	@FXML
-	private Button AButton;
-
+	
 	private GestionJeu jeu;
 	private GestionOption opt;
 	
 	private Stage stagefin;
 	private Scene scenefin;
-	public int savePendu ;
-	public int validerParametre;
 	
 	
 	public void ControleurF(Stage s,GestionJeu Jeu,GestionOption Opt)
@@ -38,7 +34,6 @@ public class ControleurFin {
 		jeu = Jeu;
 		opt = Opt;
 		stagefin = s;
-		savePendu = opt.actualPendu;
 		scenefin = stagefin.getScene();
 		scenefin.getStylesheets().clear();
 		scenefin.getStylesheets().add(getClass().getResource(opt.getPolice("Aide")).toExternalForm());
